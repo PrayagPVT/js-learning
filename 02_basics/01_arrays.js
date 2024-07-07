@@ -54,4 +54,5 @@ console.log(myn2)
 // sabse pehle jo A , B, C lagaya hai woh sirf array ke age lagay hai yeh dekhne ke liye original array me kuch change hua hai ya nhi 
 // slice 1 se lekar 3 tak value dega par wo 3 ko include nhi krega sath me original array manipulate nhi kreaga
 // splice 1 se lekar 3 tak value dega par wo 3 ko bhi include krega par major change yeh hoga ki original array se wo value hi hata dega 
-// slice splice ka sabse bada difference yahi hai ki slice me original array ko kuch nhi hoga par splice me original array manipulate ho jaega 
+// slice splice ka sabse bada difference yahi hai ki slice me original array ko kuch nhi hoga par splice me original array manipulate ho jaega
+
