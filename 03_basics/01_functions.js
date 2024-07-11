@@ -82,3 +82,40 @@ console.log(loginUserMessage2("Anuj"));
 // Anuj just logged in
 // yeh output aega agar apan input value nhi denge toh default value jo set hai line number 72 me sam wo execute hogi aur agar input
 // value denge toh wo print hogi 
+
+
+// ******************************************SUPPOSE KRO KI APNE KO NHI PATA KI KITNE NUMBER AENGE CALCULATE KRNE KE LIYE UPAR WALE 
+// FUNCTION ME 2 PARAMETER LAGAE HAI LINE NUMBER 36 ME PAR AGAR PATA NHI HO KI KITNE NUMEBRS AENGE PLUS KRNE KE LIYE TOH IS NICHE WALE
+// FUNCTION KO USE KRENGE
+// YAHA ... REST OPERATOR HAI 
+function calculateCartPrice(...num1) {
+    return num1
+}
+
+console.log(calculateCartPrice(200, 400, 500));
+// [ 200, 400, 500 ] output 
+
+const user = {
+    username: "Prayag",
+    price : 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
+
+}
+handleObject(user)
+// Username is Prayag and price is 199 output 
+
+
+const myNewArr = [200, 300, 400, 500]
+
+function returnsecondValue(getArray){
+    return getArray[1];
+}
+// upar wale function me myNewArr pass nhi krna hai kyuki waha dusra array bhi pass kr skte hai hume function ka argument pass krna
+// hai jo ki getArray hai line no 120 me dikh jaega esa kyu hai
+// console.log(returnsecondValue(myNewArr));
+// output is 300 
+console.log(returnsecondValue([200,300,400,500]));
+// output is 300 
