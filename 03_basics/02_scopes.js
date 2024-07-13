@@ -34,3 +34,52 @@ if (true) {
 // *************************************IMP*********************
 // agar inspect krke scope check krenge toh alag hai 
 // aur yaha node me scope alag 
+
+
+
+// *****************************NESTED SCOPE **************************************
+
+// abb yaha function ke andar function banaya hai toh jo pehla function hai wo andar wale function ko access nhi kr skta 
+// lekin andar wala function jo ki two nam ka function hai wo one nam ke  function ko access kr skta hai  kyuki
+// two ke liye toh one hi global scope hai par one access nhi kr skta two ko (mtlbb child function parent function ko access kr
+// skta hai )
+function one() {
+    const username = "prayag"
+
+    function two(){
+        const website = "youtube"
+        console.log(username);
+    }
+    // console.log(website);
+
+    two()
+}
+one()
+
+if(true){
+    const username1 = "prayag"
+    if(username1 === "prayag"){
+        const website1 = "youtube"
+        console.log(username1 + website1);
+    }
+    // console.log(website1);
+    // yaha website1 ka scope hi child entity me hai toh wo parent entity me nhi a skta 
+}
+
+// console.log(username1);
+// yeh bhi nhi execute hoga kyuki iska scope bhi nhi hai 
+
+
+// ++++++++++++++++++++++++++++++++++++ Interesting +++++++++++++++++++++++++++++++++++++
+
+function addone(num) {
+    return num +   1
+}
+console.log(addone(5));
+
+const addtwo = function(num){
+    return num + 2;
+}
+addtwo(5)
+
+// yeh dono functions hi hai 
