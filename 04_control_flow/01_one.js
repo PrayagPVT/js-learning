@@ -46,3 +46,22 @@ if(loggedInFromGoggle || LoggedInFromEmail){
 // output
 // Allow to purchase
 // Let him cook
+
+// Nullish Coalescing Operatoe (??) : null undefined 
+// yeh operator null aur undefined value ke liye banya hai agar database se null ya undeifed value a jae toh code me dikkat a skti 
+// hai isiliye yeh abanaya hai ?? 2 question mark ke baad jo bhi value denge wo output me a jaegi
+let val1
+val1 = null ?? 10
+// val1 = undefined ?? 15
+console.log(val1);
+// output 
+// 10
+// 15
+
+// Ternary operator
+
+// condition ? true : false
+
+const iceTeaPrice = 100
+iceTeaPrice <= 80 ? console.log("less than 80") : console.log("more than 80");
+// output is more than 80 
