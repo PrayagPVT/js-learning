@@ -13,7 +13,7 @@ const newNums = myNums
                     .filter((num) => num >= 40)
 console.log(newNums); 
 // output is 
-
+//[
     // 41, 51,  61, 71,
     // 81, 91, 101
 //   ]                   
