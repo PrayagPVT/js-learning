@@ -37,3 +37,21 @@ console.log(arrThree[8])
 
 // SMI > DOUBLE > PACKED 
 // H_SMI > H_DOUBLE > H_PACKED
+
+const arrFour = new Array(3)
+// just three holes. HOLEY_SMI_ELEMENTS
+
+arrFour[0] = '1' // Holey_elemnts
+arrFour[1] = '2' // Holey_elemnts
+arrFour[2] = '3' // Holey_elemnts
+
+const arrFive = []
+arrFive.push('1')
+arrFive.push('2')
+arrFive.push('3')
+
+
+const arrSix = [1, 2, 3, 4, 5]
+arrSix.push(NaN)
+// this is double 
+
